@@ -1,2 +1,2 @@
 SHELL=/bin/bash
-* * * * * /home/ubuntu/whisper-server-script/run.sh 2>/home/ubuntu/whisperx.log 1>/home/ubuntu/whisperx.log
+* * * * * /home/ubuntu/whisper-server-script/run.sh 2>>/home/ubuntu/whisperx.log 1>>/home/ubuntu/whisperx.log
