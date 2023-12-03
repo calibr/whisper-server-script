@@ -44,7 +44,7 @@ def extract_video_id(url):
     return match.group(0) if match else None
 
 def extract_audio(video_path, audio_path):
-    command = ['ffmpeg', '-i', video_path, '-vn', '-c:a', 'copy', '-y', audio_path]
+    command = ['ffmpeg', '-i', video_path, '-vn', '-y', audio_path]
     subprocess.run(command, check=True)
 
 
