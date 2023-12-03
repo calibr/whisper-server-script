@@ -1,3 +1,8 @@
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 import yt_dlp
 import boto3
 import subprocess
@@ -8,10 +13,6 @@ from filelock import FileLock, Timeout
 import time
 import whisperx_transcribe
 import json
-from dotenv import load_dotenv
-
-load_dotenv()
-
 bucket = os.environ['BUCKET']
 hf_token = os.environ['HF_TOKEN']
 
